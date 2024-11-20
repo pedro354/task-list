@@ -1,0 +1,8 @@
+[build]
+  publish = "public"   # Pasta de arquivos estáticos, se aplicável
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/app"
+  status = 200
