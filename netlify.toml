@@ -1,13 +1,18 @@
 [build]
   functions = "netlify/functions"
-  publish = "public" # Apenas se você tiver arquivos estáticos. Caso contrário, remova.
+  publish = "public" # Apenas se você tiver arquivos estáticos, caso contrário remova
 
 [[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/app"
+  # Redireciona apenas as requisições que precisam ser tratadas pela função serverless
+  from = "/api/*"
+  to = "/.netlify/functions/index"
   status = 200
 
+  # Deixe páginas estáticas (HTML, CSS, JS) acessíveis sem redirecionamento
+  from = "/static/*"
+  to = "/static/:splat"
+  status = 200
 
 [[edge_functions]]
-function = "FUNCTION-NAME"
-path = "/test"
+  function = "myEdgeFunction" # Substitua pelo nome real da sua função
+  path = "/test"
