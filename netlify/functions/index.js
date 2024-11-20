@@ -1,8 +1,10 @@
-// netlify/functions/index.js
-const serverless = require('serverless-http');
 const express = require('express');
-const app = express();
-const tasksRouter = require('../../routes/tasks'); // Defina as rotas no Express
+const tasksController = require('../../routes/tasks');  // Verifique se o caminho está correto
 
-app.use('/.netlify/functions/index', tasksRouter); // Definindo as rotas no Express
-module.exports.handler = serverless(app);
+const app = express();
+app.use(express.json());
+
+app.get('/api/tasks', tasksController.index);
+app.post('/api/tasks', tasksController.create);
+
+module.exports.handler = require('@netlify/functions').handler(app);
