@@ -10,7 +10,7 @@ const tasksController = {
     },
     // GET /app/nova-lista - exibir a pagina do formulario - redenrizar a tela
     create: (req, res) => {
-        res.render('create.ejs')
+        res.render('create.ejs');
     },
     //POST /app/nova-lista - destinado a salvar o model 
     save: (req, res) => {

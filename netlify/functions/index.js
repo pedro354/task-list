@@ -1,5 +1,5 @@
 const express = require('express');
-const tasksController = require('../../routes/tasks');  // Verifique se o caminho está correto
+const tasksController = require('/src/controllers/tasksController');  // Verifique se o caminho está correto
 
 const app = express();
 app.use(express.json());

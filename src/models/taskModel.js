@@ -55,7 +55,7 @@ module.exports = {
         // achando a tarefa com taskList.task.find, dai tem uma tarefa que vai encontrar, baseado no seguinte se task.id é igual ao taskId do parametro 
         const task = taskList.tasks.find(task => task.id === taskId)
         // ao clicar em completar irá alterar o objeto
-        task.completed = false
+        task.completed = false;
     }  
     
 }

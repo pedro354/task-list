@@ -16,4 +16,4 @@ router.post('/app/:id/excluir', tasksController.delete)
 // detalhe importante: o caminho que ta sendo implementado é de referencia precisa ser colocado tem que ser exatamente o que foi passado no Controller(tasksController) nesse caminho de rotas.
 router.post('/app/:listId/completar/:taskId', tasksController.completeTask)
 router.post('/app/:listId/desfazer/:taskId', tasksController.undoTask)
-module.exports = router
+module.exports = router;
