@@ -13,4 +13,3 @@ app.use(express.static('public'))
 app.use(router)
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Servidor Inciado em http://localhost:${PORT}/`));
-module.exports.handler = serverless(app);

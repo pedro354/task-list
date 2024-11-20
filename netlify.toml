@@ -1,8 +1,13 @@
 [build]
-  publish = "public"   # Pasta de arquivos estáticos, se aplicável
   functions = "netlify/functions"
+  publish = "public" # Apenas se você tiver arquivos estáticos. Caso contrário, remova.
 
 [[redirects]]
   from = "/*"
   to = "/.netlify/functions/app"
   status = 200
+
+
+[[edge_functions]]
+function = "FUNCTION-NAME"
+path = "/test"

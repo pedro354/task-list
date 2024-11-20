@@ -11,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@netlify/functions": "^2.8.2",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "ejs": "^3.1.10",
@@ -18,7 +19,6 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.7",
-        "serverless-http": "^3.0.0"
-    
+    "serverless-http": "^3.0.0"
   }
 }
