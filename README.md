@@ -7,7 +7,7 @@
 - Adicionar, editar e remover tarefas.
 - Marcar tarefas como concluídas.
 - Visualizar o progresso das suas tarefas.
-
+- **Deploy**: Vercel
 ## Tecnologias Utilizadas
 
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap.
