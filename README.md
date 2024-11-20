@@ -12,4 +12,5 @@
 
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap.
 - **Backend**: Node.js, Express.
-## Como Rodar o Projeto Localmente
+## Como Rodar o Projeto 
+https://task-list-three-mu.vercel.app/app
